@@ -24,5 +24,6 @@ for (int i = 0; i < arrstr.Length; i++)
     WriteLine($"введите {i + 1} слово");
     arrstr[i] = ReadLine()!;
 }
-string output = string.Join(", ", stringSearch(arrstr));
-WriteLine($"[{output}]");
+string output1 = string.Join(", ", arrstr);
+string output2 = string.Join(", ", stringSearch(arrstr));
+WriteLine($"[{output1}] -> [{output2}]");
